@@ -22,9 +22,10 @@ void Bank::CreateAccount(Account newAccount)
 std::string Bank::ShowAccounts()
 {
 	std::string output = "Accounts for " + _name + "\n";
+	int index = 0;
 	for (Account bob : _accounts)
 	{
-		output += std::to_string(bob.getAccountNumber()) += "\n";
+		output += "Account " + std::to_string(index + 1) + ") " + std::to_string(bob.getAccountNumber()) += "\n";
 	}
 	return output;
 }
@@ -35,7 +36,7 @@ std::string Bank::ListAccounts()
 	int index = 0;
 	for (Account bob : _accounts)
 	{
-		output += std::to_string(index + 1) +") " + std::to_string(bob.getAccountNumber()) += "\n";
+		output += "Account " + std::to_string(index + 1) +") " + std::to_string(bob.getAccountNumber()) += "\n";
 		index++;
 	}
 	return output;
