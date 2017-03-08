@@ -1,13 +1,15 @@
 #pragma once
 #include "Customer.h"
+#include <vector>
 
 
 class Account
 {
 private:
 	int _accountNumber;
-	int _balanceInPennies;
+	int _balanceInPennies = 100;
 	Customer _accountOwner;
+	std::vector<std::string> _log;
 public:
 	Account(Customer customer, int accountNumber);
 	~Account();
@@ -16,5 +18,7 @@ public:
 	void Withdraw(int numberOfPennies);
 	int getBalance();
 	int getAccountNumber();
+	std::string getAccountOwner();
+
 };
 

@@ -22,10 +22,15 @@ void Account::Withdraw(int numberOfPennies)
 
 int Account::getBalance()
 {
-	return 0;
+	return _balanceInPennies;
 }
 
 int Account::getAccountNumber()
 {
 	return _accountNumber;
+}
+
+std::string Account::getAccountOwner()
+{
+	return _accountOwner.getFullName();
 }
