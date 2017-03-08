@@ -15,5 +15,6 @@ public:
 	void Deposit(int numberOfPennies);
 	void Withdraw(int numberOfPennies);
 	int getBalance();
+	int getAccountNumber();
 };
 
