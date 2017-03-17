@@ -89,10 +89,10 @@ void TransactMenu()
 	switch (transactionType)
 	{
 	case 1: bank.Deposit(chosenAccount, pennies);
-		break;
+			break;
 
 	case 2: bank.Withdraw(chosenAccount, pennies);
-		break;
+			break;
 
 	default: break;
 	}

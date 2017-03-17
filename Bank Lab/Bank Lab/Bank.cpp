@@ -27,7 +27,7 @@ std::string Bank::ShowAccounts()
 	for (Account bob : _accounts)
 	{
 		output += "Account " + std::to_string(index + 1) + ": " + std::to_string(bob.getAccountNumber()) + " - " + bob.getAccountOwner() +" Balance: " 
-			+ std::to_string(bob.getBalance()) += "\n";
+			+ std::to_string(bob.getBalance()) += " pennies\n";
 		index++;
 	}
 	return output;
